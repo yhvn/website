@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night: #07080b;
+  --color-night-2: #0e1015;
+  --color-night-3: #161920;
+  --color-ink: #eceef1;
+  --color-ink-muted: #a2a7b0;
+  --color-copper: #e8793a;
+  --color-copper-soft: #f4a36f;
+
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-night);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-copper);
+  color: var(--color-night);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-copper-soft);
+  outline-offset: 3px;
+}
+
+/* Load-in for the hero copy. Pure CSS so the text is never stuck hidden
+   before hydration or without JavaScript. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.7s var(--ease-out-soft) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.blink {
+  animation: blink 2.4s steps(1) infinite;
+  animation-delay: var(--d, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise,
+  .blink {
+    animation: none;
+  }
+}
