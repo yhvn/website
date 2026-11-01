@@ -1,10 +1,21 @@
 // yh.Labs wordmark, from yh-labs-wordmark-rounded-transparent-light.svg.
 // The viewBox is cropped to the strokes so it lines up with the page margins.
-export function Logo({ className }: { className?: string }) {
+export function Logo({
+  className,
+  width,
+  height,
+}: {
+  className?: string;
+  // Explicit size, for renderers without CSS such as the Open Graph image.
+  width?: number;
+  height?: number;
+}) {
   return (
     <svg
       viewBox="75 85 1202 358"
       className={className}
+      width={width}
+      height={height}
       role="img"
       aria-label="yh.Labs"
     >

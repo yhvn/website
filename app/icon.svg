@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- The "y." from the yh.Labs wordmark on the night ground. -->
+  <rect width="512" height="512" rx="112" fill="#07080b"/>
+  <g transform="translate(11.5 -146.6) scale(1.27)">
+    <g fill="none" stroke-width="46" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M98 214 L170 320" stroke="#8DB8FF"/>
+      <path d="M232 214 L140 420" stroke="#EEF0F4"/>
+    </g>
+    <rect x="262" y="317" width="48" height="48" fill="#DB8149"/>
+  </g>
+</svg>
