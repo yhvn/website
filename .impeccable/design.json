@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T00:45:46+00:00",
+  "title": "Design System: yh.Labs",
+  "extensions": {
+    "colorMeta": {
+      "lamp-copper": {
+        "role": "primary",
+        "displayName": "Lamp Copper",
+        "canonical": "oklch(69.2% 0.157 48)",
+        "tonalRamp": [
+          "#1d0200",
+          "#421300",
+          "#6a2900",
+          "#964103",
+          "#c45a13",
+          "#e1824f",
+          "#feaf86",
+          "#ffdfc1"
+        ]
+      },
+      "copper-soft": {
+        "role": "primary",
+        "displayName": "Copper Soft",
+        "canonical": "oklch(78.4% 0.118 53)",
+        "tonalRamp": [
+          "#180500",
+          "#3a1a03",
+          "#603211",
+          "#884c22",
+          "#b26834",
+          "#d08c61",
+          "#efb693",
+          "#ffe4ca"
+        ]
+      },
+      "workshop-night": {
+        "role": "neutral",
+        "displayName": "Workshop Night",
+        "canonical": "oklch(13.5% 0.007 269)",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#222428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ]
+      },
+      "night-raised": {
+        "role": "neutral",
+        "displayName": "Night Raised",
+        "canonical": "oklch(17.3% 0.011 268)",
+        "tonalRamp": [
+          "#090b10",
+          "#222429",
+          "#3d4046",
+          "#5b5d64",
+          "#7a7d84",
+          "#9b9ea5",
+          "#c1c4cb",
+          "#ebeef6"
+        ]
+      },
+      "night-lifted": {
+        "role": "neutral",
+        "displayName": "Night Lifted",
+        "canonical": "oklch(21.3% 0.015 267)",
+        "tonalRamp": [
+          "#080b11",
+          "#21242b",
+          "#3c4048",
+          "#5a5e66",
+          "#797d86",
+          "#9a9ea8",
+          "#c0c4ce",
+          "#eaeef9"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(94.8% 0.005 258)",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4042",
+          "#5c5e60",
+          "#7c7d80",
+          "#9d9ea1",
+          "#c2c4c7",
+          "#edeff2"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "oklch(72.7% 0.014 262)",
+        "tonalRamp": [
+          "#080b11",
+          "#20242b",
+          "#3c4047",
+          "#595e66",
+          "#797d86",
+          "#9a9fa8",
+          "#bfc4ce",
+          "#e9eff8"
+        ]
+      },
+      "logo-blue": {
+        "role": "identity",
+        "displayName": "Logo Blue",
+        "canonical": "oklch(77.9% 0.112 260)",
+        "tonalRamp": [
+          "#030b1c",
+          "#132440",
+          "#273f67",
+          "#3e5d92",
+          "#567dbf",
+          "#7b9fdb",
+          "#a7c5f7",
+          "#d9f0ff"
+        ]
+      },
+      "logo-copper": {
+        "role": "identity",
+        "displayName": "Logo Copper"
+      },
+      "tone-flutter": {
+        "role": "data",
+        "displayName": "Flutter Tone"
+      },
+      "tone-kotlin": {
+        "role": "data",
+        "displayName": "Kotlin Tone"
+      },
+      "tone-swift": {
+        "role": "data",
+        "displayName": "Swift Tone"
+      },
+      "signal-green": {
+        "role": "data",
+        "displayName": "Signal Green"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, once per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Project names on cards."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Sub-headings inside a section."
+      },
+      "body-lg": {
+        "displayName": "Body Large",
+        "purpose": "Intros and bio, max 34rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Card descriptions and button labels."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata in Ink Muted."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Literal code and terminal output inside mockups only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "prop-drop",
+        "value": "0 3em 6em -1.5em rgba(0,0,0,0.85), 0 0 0 0.1em rgba(255,255,255,0.09), inset 0 0 0 0.12em rgba(255,255,255,0.06)",
+        "purpose": "Phone shells in the hero scene."
+      },
+      {
+        "name": "glass-window",
+        "value": "0 2.5em 5em -1.5em rgba(0,0,0,0.8)",
+        "purpose": "Terminal and code windows in the hero scene, with backdrop-filter: blur(12px)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-soft",
+        "value": "cubic-bezier(0.2, 0.7, 0.2, 1)",
+        "purpose": "Hero copy entrance and soft transitions."
+      },
+      {
+        "name": "rise",
+        "value": "0.7s ease-out-soft, 24px rise, 80ms stagger",
+        "purpose": "Hero copy entrance only; pure CSS."
+      },
+      {
+        "name": "hover",
+        "value": "200-300ms",
+        "purpose": "Buttons 200ms, cards 300ms."
+      },
+      {
+        "name": "float",
+        "value": "6-10s easeInOut infinite",
+        "purpose": "Hero props, independent periods so layers never sync."
+      },
+      {
+        "name": "pointer-spring",
+        "value": "stiffness 60, damping 20, mass 0.6",
+        "purpose": "Parallax following the pointer, mouse only."
+      },
+      {
+        "name": "beacon-blink",
+        "value": "2.4s steps(1) infinite",
+        "purpose": "Skyline spire beacons."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one solid copper element per screen; the main action.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Explore projects <svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M8 2v11m0 0-4.5-4.5M8 13l4.5-4.5\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-btn-primary { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: inline-flex; align-items: center; gap: 8px; height: 52px; padding: 0 28px; border-radius: 9999px; background: var(--color-copper, #e8793a); color: var(--color-night, #07080b); font-size: 16px; font-weight: 600; text-decoration: none; transition: background-color 200ms, transform 200ms; } .ds-btn-primary svg { transition: transform 200ms; } .ds-btn-primary:hover { background: var(--color-copper-soft, #f4a36f); } .ds-btn-primary:hover svg { transform: translateY(2px); } .ds-btn-primary:active { transform: scale(0.98); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary outbound action, e.g. View on GitHub.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"/></svg> View on GitHub <span class=\"ds-btn-ghost-arrow\"><svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" aria-hidden=\"true\"><path d=\"M4.5 11.5 11.5 4.5M5.5 4.5h6v6\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a>",
+      "css": ".ds-btn-ghost { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 28px; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.04); color: var(--color-ink, #eceef1); font-size: 16px; font-weight: 500; text-decoration: none; backdrop-filter: blur(4px); transition: border-color 200ms, background-color 200ms, transform 200ms; } .ds-btn-ghost-arrow { display: inline-flex; transition: transform 200ms; } .ds-btn-ghost:hover { border-color: rgba(232,121,58,0.6); background: rgba(255,255,255,0.07); } .ds-btn-ghost:hover .ds-btn-ghost-arrow { transform: translate(2px,-2px); } .ds-btn-ghost:active { transform: scale(0.98); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Transparent header over the hero: wordmark left, three text links right.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main\"><span class=\"ds-nav-mark\">yh<b>.</b>Labs</span><ul><li><a href=\"#\">Projects</a></li><li><a href=\"#\">About</a></li><li><a href=\"#\">GitHub</a></li></ul></nav>",
+      "css": ".ds-nav { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: flex; align-items: center; justify-content: space-between; height: 80px; padding: 0 32px; background: var(--color-night, #07080b); } .ds-nav-mark { color: var(--color-ink, #eceef1); font-size: 28px; font-weight: 700; letter-spacing: -0.03em; } .ds-nav-mark b { color: #db8149; } .ds-nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; } .ds-nav a { color: var(--color-ink, #eceef1); font-size: 15px; text-decoration: none; transition: color 200ms; } .ds-nav a:hover { color: var(--color-copper-soft, #f4a36f); } .ds-nav a:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Tech Stack List",
+      "kind": "custom",
+      "description": "Plain labels led by a small square in each language tone; no chip chrome.",
+      "html": "<ul class=\"ds-stack\"><li><i style=\"background:#4fb8e8\"></i>Flutter</li><li><i style=\"background:#a77bf3\"></i>Kotlin</li><li><i style=\"background:#f05138\"></i>Swift</li><li><i style=\"background:#e8793a\"></i>Rust</li></ul>",
+      "css": ".ds-stack { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; margin: 0; padding: 0; color: var(--color-ink-muted, #a2a7b0); font-size: 14px; } .ds-stack li { display: flex; align-items: center; gap: 8px; } .ds-stack i { width: 8px; height: 8px; border-radius: 2px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Whole-card link to a repository; tonal, flat, warms and lifts on hover.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card-head\"><span class=\"ds-card-title\">oxdrop</span><span class=\"ds-card-arrow\"><svg viewBox=\"0 0 16 16\" width=\"14\" height=\"14\" aria-hidden=\"true\"><path d=\"M4.5 11.5 11.5 4.5M5.5 4.5h6v6\" stroke=\"currentColor\" stroke-width=\"1.8\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></span><span class=\"ds-card-desc\">Send files from your Mac or PC to an Android phone over local Wi-Fi: scan a QR code and download in the browser</span><span class=\"ds-card-meta\"><span><i></i>Rust</span><span>2 stars</span></span></a>",
+      "css": ".ds-card { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: flex; flex-direction: column; max-width: 560px; padding: 36px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: var(--color-night-2, #0e1015); color: var(--color-ink, #eceef1); text-decoration: none; transition: border-color 300ms, background-color 300ms, transform 300ms; } .ds-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; } .ds-card-title { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; } .ds-card-arrow { display: inline-flex; margin-top: 6px; color: var(--color-ink-muted, #a2a7b0); transition: color 300ms, transform 300ms; } .ds-card-desc { margin-top: 16px; font-size: 16px; line-height: 1.625; } .ds-card-meta { display: flex; gap: 20px; padding-top: 32px; color: var(--color-ink-muted, #a2a7b0); font-size: 14px; } .ds-card-meta span { display: flex; align-items: center; gap: 8px; } .ds-card-meta i { width: 10px; height: 10px; border-radius: 9999px; background: var(--color-copper, #e8793a); } .ds-card:hover { transform: translateY(-4px); border-color: rgba(232,121,58,0.5); background: var(--color-night-3, #161920); } .ds-card:hover .ds-card-arrow { color: var(--color-copper, #e8793a); transform: translate(2px,-2px); } .ds-card:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "description": "Underlined copper link for standalone and inline links.",
+      "html": "<a class=\"ds-link\" href=\"#\">All repositories on GitHub</a>",
+      "css": ".ds-link { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; color: var(--color-ink, #eceef1); font-size: 16px; font-weight: 500; text-decoration: underline; text-decoration-color: rgba(232,121,58,0.6); text-underline-offset: 6px; transition: color 200ms; } .ds-link:hover { color: var(--color-copper-soft, #f4a36f); } .ds-link:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Blog List Row",
+      "kind": "custom",
+      "refersTo": "list-row",
+      "description": "Full-width row link: title left, topic right; fills a tone on hover.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-row-title\">Ownership: the heart of Rust programming</span><span class=\"ds-row-topic\">Rust</span></a>",
+      "css": ".ds-row { font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 16px 12px; border-radius: 12px; text-decoration: none; transition: background-color 200ms; } .ds-row-title { color: var(--color-ink, #eceef1); font-size: 18px; line-height: 1.375; transition: color 200ms; } .ds-row-topic { flex-shrink: 0; color: var(--color-ink-muted, #a2a7b0); font-size: 14px; } .ds-row:hover { background: var(--color-night-2, #0e1015); } .ds-row:hover .ds-row-title { color: var(--color-copper-soft, #f4a36f); } .ds-row:focus-visible { outline: 2px solid var(--color-copper-soft, #f4a36f); outline-offset: 3px; }"
+    },
+    {
+      "name": "Glass Window",
+      "kind": "custom",
+      "description": "Signature hero prop: terminal/code window with three-dot chrome. Hero scene only.",
+      "html": "<figure class=\"ds-window\"><div class=\"ds-window-bar\"><i></i><i></i><i></i><span>transfer.rs</span></div><pre><code><b>pub fn</b> start(items: Vec&lt;Item&gt;)\n    -&gt; <em>Result</em>&lt;Transfer&gt; {\n    <b>let</b> link = Link::random();\n    <em>Ok</em>(Transfer::new(items, link))\n}</code></pre></figure>",
+      "css": ".ds-window { margin: 0; width: 352px; border-radius: 18px; border: 1px solid rgba(255,255,255,0.09); background: rgba(15,17,22,0.75); box-shadow: 0 40px 80px -24px rgba(0,0,0,0.8); backdrop-filter: blur(12px); overflow: hidden; } .ds-window-bar { display: flex; align-items: center; gap: 7px; padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.07); font-family: var(--font-geist-sans, Geist), system-ui, sans-serif; } .ds-window-bar i { width: 11px; height: 11px; border-radius: 9999px; background: rgba(255,255,255,0.15); } .ds-window-bar span { margin-left: 10px; color: var(--color-ink-muted, #a2a7b0); font-size: 13px; } .ds-window pre { margin: 0; padding: 16px 18px; font-family: var(--font-geist-mono, 'Geist Mono'), ui-monospace, monospace; font-size: 12px; line-height: 1.7; color: var(--color-ink-muted, #a2a7b0); } .ds-window b { font-weight: 400; color: var(--color-copper-soft, #f4a36f); } .ds-window em { font-style: normal; color: #7fb5a8; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Workshop",
+    "overview": "The page is a workshop after dark: a near-black room, one warm lamp, and the work itself laid out on the bench. Everything at rest is calm and nocturnal. The ground is a faintly blue-black night, text is a soft cool white, and the only warmth comes from a single copper accent and the lit windows of a skyline at the foot of the hero. Nothing shouts. Attention goes where the lamp points.\n\nThe work is shown, not described. Phones, a terminal and a code window float in the hero as the proof of what gets built here. They are the only objects in the system with real shadows and motion. Below the hero the page goes flat and quiet: big tightly tracked headings, generous vertical space, tonal cards a step lighter than the night, and copper that only wakes up when the visitor touches something.\n\nDensity is low and the measure is controlled. A section holds one heading, one short paragraph and the content it introduces. The system is dark by design and has no light theme.",
+    "keyCharacteristics": [
+      "One near-black ground with two tonal steps above it; no gradients on surfaces.",
+      "A single warm accent, Lamp Copper, used for the primary action, focus, selection and hover states.",
+      "Large Geist headings at 600 weight with tight negative tracking (-0.04em to -0.045em).",
+      "Flat page, lifted props: only the hero's device mockups cast shadows and move.",
+      "A quiet, pixel-lit night skyline anchors the hero; warm windows echo the accent."
+    ],
+    "rules": [
+      {
+        "name": "The One Lamp Rule",
+        "body": "Lamp Copper is the only warm interface color, and it covers well under 10% of any viewport. It is solid on exactly one element per screen, the primary button. Everywhere else it appears as a hairline, an underline, a dot or a hover state.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Pure Extremes Rule",
+        "body": "Never use #000 or #fff. The ground is Workshop Night and the brightest text is Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tight Display Rule",
+        "body": "Headings at 2.5rem and above use line-height 0.95 and tracking between -0.04em and -0.045em. Below that size tracking eases to -0.02em or less, and body text is never tracked.",
+        "section": "typography"
+      },
+      {
+        "name": "The Mono Means Code Rule",
+        "body": "Geist Mono appears only where the content is literally code or terminal output. It is never used for labels or decoration.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Page Rule",
+        "body": "Outside the hero scene, nothing casts a shadow. Card hover lifts by 4px, steps the background one tone lighter and warms the border, with no shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep Lamp Copper rare: one solid copper element per viewport (the primary button), and hairlines, dots and hover states everywhere else.",
+      "**Do** build depth below the hero from tone: Workshop Night, then Night Raised, then Night Lifted, plus 8% white hairlines.",
+      "**Do** set section headings in Geist 600 with line-height 0.95 and tracking of -0.04em, and let them stand alone.",
+      "**Do** keep intro and body copy at or under 34rem and in Ink. Use Ink Muted only for metadata.",
+      "**Do** make every interactive element answer hover and focus: copper warmth plus a small movement of 2–4px or a 0.98 press, within 300ms.",
+      "**Do** draw icons as inline SVG on a 16px grid with round caps at a 1.8 stroke, matching the wordmark. Reuse the shared outbound arrow (`app/components/icons.tsx`) for every external link.",
+      "**Do** disable motion when the visitor prefers reduced motion, and render seeded art identically on the server and in the browser."
+    ],
+    "donts": [
+      "**Don't** add shadows, glass or floating motion outside the hero's device scene.",
+      "**Don't** use pure black or pure white, or the wordmark's blue, anywhere in the interface.",
+      "**Don't** introduce a second accent color or gradient fills on surfaces or text. Language tones stay tiny markers next to their names.",
+      "**Don't** put small labels, badges or numbers above any heading, including the hero headline. Headings stand alone.",
+      "**Don't** use text glyphs (↗, →) or emoji as icons.",
+      "**Don't** use Geist Mono for anything except code and terminal output.",
+      "**Don't** add a light theme. The night is the system."
+    ]
+  }
+}
