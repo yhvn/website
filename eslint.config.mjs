@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored Claude Code skills and agents, not app code.
+    ".claude/**",
   ]),
 ]);
 
