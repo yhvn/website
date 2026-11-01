@@ -238,6 +238,10 @@ Two phone shells (an iOS variant with a pill cut-out and an Android variant with
 ### Night skyline (signature)
 Three seeded SVG building layers in stepped night tones (#11141b, #0c0e13, #07080b), each with a few lit windows that are mostly warm copper and some cool white. Red beacons on the spires blink in hard 2.4s steps. The layers parallax at increasing depth, and the front layer dissolves into the page ground.
 
+### App icon and share image
+- **App icon** (`app/icon.svg`, reused by `app/apple-icon.tsx`): the wordmark's "y." on a Workshop Night rounded square. These are the only places outside the wordmark that use Logo Blue and Logo Copper.
+- **Share image** (`app/opengraph-image.tsx`, 1200×630): the hero restated. It shows the wordmark, the Display headline, a one-line lede, the tech stack row, the lamp glow and a static skyline (beacons don't blink), all from the same tokens and the same seeded skyline layers. It uses Geist from `assets/fonts/`.
+
 ### Motion
 - **Easing:** soft ease-out, `cubic-bezier(0.2, 0.7, 0.2, 1)`.
 - **Entrance:** only the hero copy has one. It rises 24px and fades in over 0.7s, staggered 80ms per element, in pure CSS so the text is never hidden without JavaScript.

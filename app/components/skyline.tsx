@@ -42,7 +42,7 @@ function buildings(layer: Layer) {
   return { list: out, rand };
 }
 
-export function SkylineLayer({ layer, index }: { layer: Layer; index: number }) {
+function scene(layer: Layer) {
   const { list, rand } = buildings(layer);
   const H = layer.height;
 
@@ -58,6 +58,41 @@ export function SkylineLayer({ layer, index }: { layer: Layer; index: number }) 
       }
     }
   }
+  return { list, windows, beacons, H };
+}
+
+/**
+ * The same layer as a static SVG string (no blinking), for places that
+ * cannot render React SVG, such as the generated Open Graph image.
+ */
+export function skylineMarkup(layer: Layer, index: number) {
+  const { list, windows, beacons, H } = scene(layer);
+  const blocks = list
+    .map(
+      (b) =>
+        `<rect x="${b.x}" y="${H - b.h}" width="${b.w}" height="${b.h}"/>` +
+        (b.spire ? `<rect x="${b.x + b.w / 2 - 1.5}" y="${H - b.h - 28}" width="3" height="28"/>` : ""),
+    )
+    .join("");
+  const lit = windows
+    .map(
+      (w) =>
+        `<rect x="${w.x}" y="${w.y}" width="4" height="5" fill="${w.warm ? "#e8793a" : "#cfd6e0"}" opacity="${w.warm ? 0.85 : 0.35}"/>`,
+    )
+    .join("");
+  const lights = beacons
+    .map((b) => `<circle cx="${b.x}" cy="${b.y}" r="2.2" fill="#ff6a3d"/>`)
+    .join("");
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${WIDTH} ${H}" preserveAspectRatio="xMidYMax slice">` +
+    `<g fill="${layer.fill}">${blocks}</g><g opacity="${0.45 + index * 0.2}">${lit}</g>${lights}</svg>`
+  );
+}
+
+export const SKYLINE_WIDTH = WIDTH;
+
+export function SkylineLayer({ layer, index }: { layer: Layer; index: number }) {
+  const { list, windows, beacons, H } = scene(layer);
 
   return (
     <svg

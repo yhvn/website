@@ -20,9 +20,11 @@ export const metadata: Metadata = {
     title: "yh.Labs — Open source, crafted with care",
     description:
       "Free Flutter, Android, iOS and Rust projects, built in the open.",
-    url: "https://github.com/yhvn",
     siteName: "yh.Labs",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 
