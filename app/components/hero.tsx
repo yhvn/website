@@ -8,6 +8,7 @@ import {
   TerminalCard,
 } from "./devices";
 import { Float, HeroStage, Parallax } from "./hero-motion";
+import { ArrowUpRight } from "./icons";
 import { SKYLINE_LAYERS, SkylineLayer } from "./skyline";
 
 const stack = [
@@ -46,39 +47,31 @@ export function Hero() {
 
       <div className="mx-auto grid w-full max-w-[1400px] flex-1 grid-cols-1 items-center gap-y-10 px-4 pb-16 sm:px-8 lg:grid-cols-12 lg:gap-x-8 lg:pb-28">
         <div className="relative z-20 lg:col-span-7">
-          <p
-            className="rise inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1.5 text-sm text-ink-muted backdrop-blur-sm"
-            style={{ "--i": 0 } as React.CSSProperties}
-          >
-            <span className="size-1.5 rounded-full bg-copper" aria-hidden="true" />
-            Open source · Mobile &amp; Rust
-          </p>
-
           <h1
             id="hero-title"
-            className="rise mt-7 text-[clamp(2.25rem,9vw,4.5rem)] lg:text-[clamp(3rem,5.6vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.045em] text-ink [text-wrap:balance]"
-            style={{ "--i": 1 } as React.CSSProperties}
+            className="rise text-[clamp(2.25rem,9vw,4.5rem)] lg:text-[clamp(3rem,5.6vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.045em] text-ink [text-wrap:balance]"
+            style={{ "--i": 0 } as React.CSSProperties}
           >
             Open source, crafted with care.
           </h1>
 
           <p
             className="rise mt-8 max-w-[34rem] text-lg leading-relaxed text-ink sm:text-xl"
-            style={{ "--i": 2 } as React.CSSProperties}
+            style={{ "--i": 1 } as React.CSSProperties}
           >
-            Free Flutter, Android, iOS and Rust projects that anyone can use,
-            learn from, and contribute to.
+            Flutter, Android, iOS and Rust projects I build in the open. Free
+            for anyone to use, learn from, and contribute to.
           </p>
 
           <div
             className="rise mt-10 flex flex-col gap-3 sm:flex-row"
-            style={{ "--i": 3 } as React.CSSProperties}
+            style={{ "--i": 2 } as React.CSSProperties}
           >
             <a
               href="#projects"
               className="group inline-flex h-13 items-center justify-center gap-2 rounded-full bg-copper px-7 text-base font-semibold text-night transition-[background-color,transform] duration-200 hover:bg-copper-soft active:scale-[0.98]"
             >
-              Explore Projects
+              Explore projects
               <svg
                 viewBox="0 0 16 16"
                 className="size-4 transition-transform duration-200 group-hover:translate-y-0.5"
@@ -100,14 +93,14 @@ export function Hero() {
                 />
               </svg>
               View on GitHub
-              <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
+              <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
 
           <ul
             aria-label="Technologies"
             className="rise mt-10 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-ink-muted"
-            style={{ "--i": 4 } as React.CSSProperties}
+            style={{ "--i": 3 } as React.CSSProperties}
           >
             {stack.map((s) => (
               <li key={s.name} className="flex items-center gap-2">
@@ -128,7 +121,7 @@ function HeroScene() {
   return (
     <div
       role="img"
-      aria-label="Two of our projects on screen: the oxdrop terminal showing a QR code, a phone receiving the files in its browser, and the Flutter e-learning app on two phones"
+      aria-label="Two of my projects on screen: oxdrop running in a terminal with its QR code, a phone receiving the files in its browser, and the Flutter e-learning app on two phones"
       className="relative w-full [container-type:inline-size] lg:col-span-5 lg:-ml-[22%] lg:w-[122%]"
     >
       <div className="relative aspect-[64/60] text-[1.5625cqw] [perspective:140em]">

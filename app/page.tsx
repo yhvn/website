@@ -46,13 +46,18 @@ export default function Home() {
         <About />
       </main>
 
-      <footer className="bg-night px-4 pb-10 pt-16 sm:px-8">
-        <div className="mx-auto max-w-[1400px]">
+      <footer className="bg-night pb-10 pt-16">
+        <div className="mx-auto w-full max-w-[1400px] px-4 sm:px-8">
           <Logo className="h-auto w-full max-w-[56rem]" />
           <div className="mt-8 flex flex-col justify-between gap-2 text-sm text-ink-muted sm:flex-row">
-            <p>Free and open source. Built in the open on GitHub.</p>
+            <p>Every project here is free and open source.</p>
             <p>
-              <a href={GITHUB_URL} className="text-ink hover:text-copper-soft">
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink transition-colors hover:text-copper-soft"
+              >
                 github.com/yhvn
               </a>
             </p>
