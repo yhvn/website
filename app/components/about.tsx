@@ -53,10 +53,14 @@ export function About() {
           </h2>
           <p className="mt-8 max-w-[34rem] text-lg leading-relaxed text-ink sm:text-xl">
             I&apos;m Tung, though Andrew is easier to remember. I&apos;m a mobile
-            engineer working in native Android and iOS and in Flutter, and I
-            reach for Rust when a tool needs to be fast and small. yh.Labs is
-            where I build in the open, so other developers can use the work,
-            learn from it, and make it better.
+            engineer. I build apps natively for Android and iOS and in Flutter,
+            and I reach for Rust when a tool needs to be fast and small.
+            yh.Labs is where I build in the open, so other developers can use
+            the work, learn from it, and make it better.
+          </p>
+          <p className="mt-5 max-w-[34rem] text-lg leading-relaxed text-ink sm:text-xl">
+            I&apos;m open to mobile and Rust work, and to collaborating on open
+            source. Email is the quickest way to reach me.
           </p>
 
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-base font-medium">

@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--color-night-3) var(--color-night);
 }
 
 body {

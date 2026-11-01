@@ -1,4 +1,5 @@
 import { GITHUB_URL, getRepos } from "../lib/github";
+import { ArrowUpRight } from "./icons";
 
 const languageTone: Record<string, string> = {
   Dart: "#4fb8e8",
@@ -21,14 +22,16 @@ export async function Projects() {
             Projects
           </h2>
           <p className="max-w-[30rem] text-lg leading-relaxed text-ink lg:col-span-5 lg:justify-self-end">
-            Everything we make is on GitHub. Read the code, open an issue, or
+            Everything I make is on GitHub. Read the code, open an issue, or
             send a pull request.
           </p>
         </div>
 
         <ul className="mt-14 grid gap-4 md:grid-cols-2">
-          {repos.map((repo) => (
-            <li key={repo.name}>
+          {repos.map((repo, i) => (
+            // With an odd count the most-starred repo spans both columns,
+            // so the grid never ends on an orphan card.
+            <li key={repo.name} className={i === 0 && repos.length % 2 === 1 ? "md:col-span-2" : undefined}>
               <a
                 href={repo.url}
                 target="_blank"
@@ -39,17 +42,12 @@ export async function Projects() {
                   <span className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
                     {repo.name}
                   </span>
-                  <span
-                    aria-hidden="true"
-                    className="mt-1 text-xl text-ink-muted transition-[color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-copper"
-                  >
-                    ↗
-                  </span>
+                  <ArrowUpRight className="mt-2 size-5 shrink-0 text-ink-muted transition-[color,transform] duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-copper" />
                 </span>
                 <span className="mt-4 block max-w-[38rem] text-base leading-relaxed text-ink">
                   {repo.description}
                 </span>
-                <span className="mt-auto flex items-center gap-5 pt-8 text-sm text-ink-muted">
+                <span className="mt-auto flex items-center gap-5 pt-8 text-sm text-ink-muted tabular-nums">
                   {repo.language && (
                     <span className="flex items-center gap-2">
                       <span
@@ -73,9 +71,10 @@ export async function Projects() {
           href={GITHUB_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-10 inline-flex items-center gap-2 text-base font-medium text-ink underline decoration-copper/60 underline-offset-[6px] transition-colors hover:text-copper-soft"
+          className="group mt-10 inline-flex items-center gap-2 text-base font-medium text-ink underline decoration-copper/60 underline-offset-[6px] transition-colors hover:text-copper-soft"
         >
-          All repositories on GitHub <span aria-hidden="true">↗</span>
+          All repositories on GitHub
+          <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </div>
     </section>

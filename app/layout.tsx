@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "yh.Labs — Open source mobile apps and Rust software",
   description:
-    "yh.Labs builds free, open source Flutter, Android, iOS and Rust projects that anyone can use, learn from, and contribute to.",
+    "Free, open source Flutter, Android, iOS and Rust projects by Andrew Do, for anyone to use, learn from, and contribute to.",
   openGraph: {
     title: "yh.Labs — Open source, crafted with care",
     description:
